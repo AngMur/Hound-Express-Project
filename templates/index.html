@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hound Express Filter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="{{ url_for('static', filename='./img/logo.png') }}" alt="Hound Express Logo">
+    </header>
+
+    <main class="main-content">
+        <div class="function">
+            <h2 class="animated-title">Separaciones</h2>
+            <div class="drop">
+                <label for="input-1" class="drop-area" id="dp1">
+                    <input type="file" id="input-1" input="input-1" accept=".xlsx" hidden>
+                    <img class="icon" src="{{ url_for('static', filename='./img/icon.png') }}" alt="upload icon">
+                    <p class="info">Arrastra tu archivo o da click aquí</p>
+                </label>
+            </div>
+            <div class="file" id="file-1">
+                <p class="file-name" id="file-name-1"></p>
+                <button class="download-btn" id="download-btn-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="function">
+            <h2 class="animated-title">Facturas</h2>
+            <div class="drop">
+                <label for="input-2" class="drop-area" id="dp2">
+                    <input type="file" id="input-2" name="input-2" accept=".xlsx" hidden>
+                    <img class="icon" src="{{ url_for('static', filename='./img/icon.png') }}" alt="upload icon">
+                    <p class="info">Arrastra tu archivo o da click aquí</p>
+                </label>
+            </div>
+            <div class="file" id="file-2">
+                <p class="file-name" id="file-name-2"></p>
+                <button class="download-btn" id="download-btn-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='./js/dropArea.js') }}"></script>
+    <script src="{{ url_for('static', filename='./js/downloadBtn.js') }}"></script>
+</body>
+</html>
